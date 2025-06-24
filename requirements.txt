@@ -1,0 +1,11 @@
+streamlit
+requests
+langchain
+langchain-openai
+langchain-core
+langchain-community
+langchainhub
+# You might need a specific version of langchain depending on your notebook
+# If you face issues, you can pin the versions, for example:
+# streamlit==1.29.0
+# requests==2.31.0 
