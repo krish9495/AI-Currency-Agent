@@ -49,7 +49,7 @@ else:
     # --- Agent Initialization ---
     try:
         prompt = hub.pull("hwchase17/structured-chat-agent")
-        llm = ChatOpenAI(temperature=0, streaming=True)
+        llm = ChatOpenAI(model="google/gemini-2.5-pro",temperature=0, streaming=True,max_tokens=1024)
         agent = create_structured_chat_agent(llm, tools, prompt)
         agent_executor = AgentExecutor(
             agent=agent,
